@@ -1,0 +1,50 @@
+.grid {
+    display: grid;
+    padding: 0.5em;
+    counter-reset: grid-items;
+    position: relative;
+  }
+  
+  .grid::before {
+    position: absolute;
+    padding-left: 3em;
+    content: attr(data-keyword);
+  }
+  
+  .grid--auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  }
+
+  .grid__item {
+    margin: 8%;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .grid--auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .card-item{
+      background-color: #F4F4F8;
+      height: 70%;
+      color: black;
+      padding: auto;
+      border-radius: 10px;
+  }
+  .upside{
+      top: -10%!important;
+  }
+  .card-item-image{
+    left: auto;
+    top: -19%;
+    position: relative;;
+  }
+  .card-item-text{
+    left: auto;
+    top: -19%;
+    position: relative;
+    font-family: Poppins;
+  }
+  .card-item-cost{
+      color: orange;
+  }
